@@ -1,0 +1,11 @@
+input/*.json
+input/*.csv
+input/*.gx3
+output/*
+!output/.gitkeep
+output/
+node_modules/
+*.log
+.env
+.env.*
+backups/

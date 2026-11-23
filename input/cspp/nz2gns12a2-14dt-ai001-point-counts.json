@@ -1,0 +1,276 @@
+{
+    "schemaVersion":  "1.0",
+    "model":  "NZ2GNS12A2-14DT",
+    "analysisStatus":  "validated",
+    "source":  {
+                   "archive":  "input\\cspp\\0x0000_NZ2GNS12A2-14DT_1_ja.CSPP.zip",
+                   "selectedEntry":  "0x0000_NZ2GNS12A2-14DT_1_ja.cspp",
+                   "identification":  {
+                                          "deviceModel":  {
+                                                              "xmlPath":  "/p:profile/p:device/p:deviceInfo/p:deviceInfoMember[@label=\"DeviceModel\"]/p:data/p:item",
+                                                              "value":  "NZ2GNS12A2-14DT"
+                                                          },
+                                          "specList":  {
+                                                           "xmlPath":  "/p:profile/p:device/p:deviceInfo/p:deviceInfoMember[@label=\"SpecList\"]/p:data/p:item",
+                                                           "value":  [
+                                                                         "CC-Link IE TSN Class B/A",
+                                                                         "入力：DC安全入力、マイナスコモンタイプ、DC24V、12点",
+                                                                         "出力：トランジスタ安全出力、ソース+シンクタイプ、DC24V、4A(Y0+、Y0-)/1点、2A(Y1+、Y1-)/1点、2点",
+                                                                         "防水コネクタ、2線式"
+                                                                     ]
+                                                       },
+                                          "language":  {
+                                                           "xmlPath":  "/p:profile/p:file/p:fileInfo/p:fileInfoMember[@label=\"Language\"]/p:data/p:item",
+                                                           "value":  "ja"
+                                                       },
+                                          "ccLinkFamilyProfileVersion":  {
+                                                                             "xmlPath":  "/p:profile/p:file/p:fileInfo/p:fileInfoMember[@label=\"CCLinkFamilyProfileVersion\"]/p:data/p:item",
+                                                                             "value":  "4.2"
+                                                                         },
+                                          "fileVersion":  {
+                                                              "xmlPath":  "/p:profile/p:file/p:fileInfo/p:fileInfoMember[@label=\"FileVersion\"]/p:data/p:item",
+                                                              "value":  "1.1"
+                                                          }
+                                      },
+                   "excludedEntries":  [
+                                           "0x0000_NZ2GNS12A2-14DT(CCIEF)_1_ja.cspp"
+                                       ]
+               },
+    "pointCountDefinitions":  {
+                                  "xmlNamespaceUri":  "http://cc-link.org/cspplus/ver4/",
+                                  "memberPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"...\"]/p:data/p:item",
+                                  "parameterMapping":  {
+                                                           "RX":  "S_B",
+                                                           "RY":  "R_B",
+                                                           "RWr":  "S_W",
+                                                           "RWw":  "R_W"
+                                                       },
+                                  "commentTextUsedAsEvidence":  false
+                              },
+    "parameters":  {
+                       "RX":  {
+                                  "initial":  16,
+                                  "minimum":  0,
+                                  "maximum":  16,
+                                  "unit":  "bit",
+                                  "unitEvidence":  {
+                                                       "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_DefaultSize\"]/p:name/p:item",
+                                                       "value":  "送信ビットデータデフォルトサイズ",
+                                                       "explicitEngineeringUnit":  null
+                                                   },
+                                  "source":  {
+                                                 "initial":  {
+                                                                 "label":  "S_B_DefaultSize",
+                                                                 "value":  16,
+                                                                 "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_DefaultSize\"]/p:data/p:item",
+                                                                 "xmlAttribute":  {
+                                                                                      "name":  "label",
+                                                                                      "value":  "S_B_DefaultSize"
+                                                                                  },
+                                                                 "name":  "送信ビットデータデフォルトサイズ",
+                                                                 "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_DefaultSize\"]/p:name/p:item",
+                                                                 "category":  "COMMON_CC-Link_IE_TSN",
+                                                                 "datatype":  "UINT32",
+                                                                 "engineeringUnit":  null
+                                                             },
+                                                 "minimum":  {
+                                                                 "label":  "S_B_MinSize",
+                                                                 "value":  0,
+                                                                 "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_MinSize\"]/p:data/p:item",
+                                                                 "xmlAttribute":  {
+                                                                                      "name":  "label",
+                                                                                      "value":  "S_B_MinSize"
+                                                                                  },
+                                                                 "name":  "送信ビットデータ最小サイズ",
+                                                                 "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_MinSize\"]/p:name/p:item",
+                                                                 "category":  "COMMON_CC-Link_IE_TSN",
+                                                                 "datatype":  "UINT32",
+                                                                 "engineeringUnit":  null
+                                                             },
+                                                 "maximum":  {
+                                                                 "label":  "S_B_MaxSize",
+                                                                 "value":  16,
+                                                                 "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_MaxSize\"]/p:data/p:item",
+                                                                 "xmlAttribute":  {
+                                                                                      "name":  "label",
+                                                                                      "value":  "S_B_MaxSize"
+                                                                                  },
+                                                                 "name":  "送信ビットデータ最大サイズ",
+                                                                 "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_B_MaxSize\"]/p:name/p:item",
+                                                                 "category":  "COMMON_CC-Link_IE_TSN",
+                                                                 "datatype":  "UINT32",
+                                                                 "engineeringUnit":  null
+                                                             }
+                                             }
+                              },
+                       "RY":  {
+                                  "initial":  16,
+                                  "minimum":  0,
+                                  "maximum":  16,
+                                  "unit":  "bit",
+                                  "unitEvidence":  {
+                                                       "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_DefaultSize\"]/p:name/p:item",
+                                                       "value":  "受信ビットデータデフォルトサイズ",
+                                                       "explicitEngineeringUnit":  null
+                                                   },
+                                  "source":  {
+                                                 "initial":  {
+                                                                 "label":  "R_B_DefaultSize",
+                                                                 "value":  16,
+                                                                 "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_DefaultSize\"]/p:data/p:item",
+                                                                 "xmlAttribute":  {
+                                                                                      "name":  "label",
+                                                                                      "value":  "R_B_DefaultSize"
+                                                                                  },
+                                                                 "name":  "受信ビットデータデフォルトサイズ",
+                                                                 "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_DefaultSize\"]/p:name/p:item",
+                                                                 "category":  "COMMON_CC-Link_IE_TSN",
+                                                                 "datatype":  "UINT32",
+                                                                 "engineeringUnit":  null
+                                                             },
+                                                 "minimum":  {
+                                                                 "label":  "R_B_MinSize",
+                                                                 "value":  0,
+                                                                 "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_MinSize\"]/p:data/p:item",
+                                                                 "xmlAttribute":  {
+                                                                                      "name":  "label",
+                                                                                      "value":  "R_B_MinSize"
+                                                                                  },
+                                                                 "name":  "受信ビットデータ最小サイズ",
+                                                                 "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_MinSize\"]/p:name/p:item",
+                                                                 "category":  "COMMON_CC-Link_IE_TSN",
+                                                                 "datatype":  "UINT32",
+                                                                 "engineeringUnit":  null
+                                                             },
+                                                 "maximum":  {
+                                                                 "label":  "R_B_MaxSize",
+                                                                 "value":  16,
+                                                                 "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_MaxSize\"]/p:data/p:item",
+                                                                 "xmlAttribute":  {
+                                                                                      "name":  "label",
+                                                                                      "value":  "R_B_MaxSize"
+                                                                                  },
+                                                                 "name":  "受信ビットデータ最大サイズ",
+                                                                 "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_B_MaxSize\"]/p:name/p:item",
+                                                                 "category":  "COMMON_CC-Link_IE_TSN",
+                                                                 "datatype":  "UINT32",
+                                                                 "engineeringUnit":  null
+                                                             }
+                                             }
+                              },
+                       "RWr":  {
+                                   "initial":  20,
+                                   "minimum":  0,
+                                   "maximum":  20,
+                                   "unit":  "word",
+                                   "unitEvidence":  {
+                                                        "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_DefaultSize\"]/p:name/p:item",
+                                                        "value":  "送信ワードデータデフォルトサイズ",
+                                                        "explicitEngineeringUnit":  null
+                                                    },
+                                   "source":  {
+                                                  "initial":  {
+                                                                  "label":  "S_W_DefaultSize",
+                                                                  "value":  20,
+                                                                  "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_DefaultSize\"]/p:data/p:item",
+                                                                  "xmlAttribute":  {
+                                                                                       "name":  "label",
+                                                                                       "value":  "S_W_DefaultSize"
+                                                                                   },
+                                                                  "name":  "送信ワードデータデフォルトサイズ",
+                                                                  "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_DefaultSize\"]/p:name/p:item",
+                                                                  "category":  "COMMON_CC-Link_IE_TSN",
+                                                                  "datatype":  "UINT16",
+                                                                  "engineeringUnit":  null
+                                                              },
+                                                  "minimum":  {
+                                                                  "label":  "S_W_MinSize",
+                                                                  "value":  0,
+                                                                  "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_MinSize\"]/p:data/p:item",
+                                                                  "xmlAttribute":  {
+                                                                                       "name":  "label",
+                                                                                       "value":  "S_W_MinSize"
+                                                                                   },
+                                                                  "name":  "送信ワードデータ最小サイズ",
+                                                                  "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_MinSize\"]/p:name/p:item",
+                                                                  "category":  "COMMON_CC-Link_IE_TSN",
+                                                                  "datatype":  "UINT16",
+                                                                  "engineeringUnit":  null
+                                                              },
+                                                  "maximum":  {
+                                                                  "label":  "S_W_MaxSize",
+                                                                  "value":  20,
+                                                                  "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_MaxSize\"]/p:data/p:item",
+                                                                  "xmlAttribute":  {
+                                                                                       "name":  "label",
+                                                                                       "value":  "S_W_MaxSize"
+                                                                                   },
+                                                                  "name":  "送信ワードデータ最大サイズ",
+                                                                  "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"S_W_MaxSize\"]/p:name/p:item",
+                                                                  "category":  "COMMON_CC-Link_IE_TSN",
+                                                                  "datatype":  "UINT16",
+                                                                  "engineeringUnit":  null
+                                                              }
+                                              }
+                               },
+                       "RWw":  {
+                                   "initial":  20,
+                                   "minimum":  0,
+                                   "maximum":  20,
+                                   "unit":  "word",
+                                   "unitEvidence":  {
+                                                        "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_DefaultSize\"]/p:name/p:item",
+                                                        "value":  "受信ワードデータデフォルトサイズ",
+                                                        "explicitEngineeringUnit":  null
+                                                    },
+                                   "source":  {
+                                                  "initial":  {
+                                                                  "label":  "R_W_DefaultSize",
+                                                                  "value":  20,
+                                                                  "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_DefaultSize\"]/p:data/p:item",
+                                                                  "xmlAttribute":  {
+                                                                                       "name":  "label",
+                                                                                       "value":  "R_W_DefaultSize"
+                                                                                   },
+                                                                  "name":  "受信ワードデータデフォルトサイズ",
+                                                                  "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_DefaultSize\"]/p:name/p:item",
+                                                                  "category":  "COMMON_CC-Link_IE_TSN",
+                                                                  "datatype":  "UINT16",
+                                                                  "engineeringUnit":  null
+                                                              },
+                                                  "minimum":  {
+                                                                  "label":  "R_W_MinSize",
+                                                                  "value":  0,
+                                                                  "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_MinSize\"]/p:data/p:item",
+                                                                  "xmlAttribute":  {
+                                                                                       "name":  "label",
+                                                                                       "value":  "R_W_MinSize"
+                                                                                   },
+                                                                  "name":  "受信ワードデータ最小サイズ",
+                                                                  "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_MinSize\"]/p:name/p:item",
+                                                                  "category":  "COMMON_CC-Link_IE_TSN",
+                                                                  "datatype":  "UINT16",
+                                                                  "engineeringUnit":  null
+                                                              },
+                                                  "maximum":  {
+                                                                  "label":  "R_W_MaxSize",
+                                                                  "value":  20,
+                                                                  "xmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_MaxSize\"]/p:data/p:item",
+                                                                  "xmlAttribute":  {
+                                                                                       "name":  "label",
+                                                                                       "value":  "R_W_MaxSize"
+                                                                                   },
+                                                                  "name":  "受信ワードデータ最大サイズ",
+                                                                  "nameXmlPath":  "/p:profile/p:commIf/p:commIfInfo/p:commIfInfoMember[@label=\"R_W_MaxSize\"]/p:name/p:item",
+                                                                  "category":  "COMMON_CC-Link_IE_TSN",
+                                                                  "datatype":  "UINT16",
+                                                                  "engineeringUnit":  null
+                                                              }
+                                              }
+                               }
+                   },
+    "validation":  {
+                       "initialWithinMinimumAndMaximum":  true,
+                       "allFourParametersPresent":  true
+                   }
+}

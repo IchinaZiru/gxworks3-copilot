@@ -1,0 +1,3 @@
+interface:
+  display_name: "GX Works3 Import"
+  short_description: "Convert checker JSON to GX station-list CSV and guide Copilot Computer Use import"
